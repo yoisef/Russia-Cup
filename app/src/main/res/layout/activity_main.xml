@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/blue"
+    android:layout_height="match_parent"
+    tools:context=".Splashactivity">
+
+
+
+
+
+   <TextView
+       android:layout_width="match_parent"
+       android:textSize="30sp"
+       android:layout_centerHorizontal="true"
+       android:gravity="center"
+       android:textColor="#fff"
+       android:layout_margin="5dp"
+       android:id="@+id/hu"
+       android:textStyle="bold"
+       android:layout_centerVertical="true"
+       android:layout_above="@id/cupp"
+       android:fontFamily="monospace"
+       android:text="RUSSIA CUP\n2018"
+       android:layout_height="wrap_content" />
+   <!-- Icon made by Smashicons from www.flaticon.com -->
+   <ImageView
+       android:layout_width="100dp"
+       android:id="@+id/cupp"
+       android:src="@drawable/cup"
+       android:layout_centerInParent="true"
+       android:layout_height="100dp" />
+
+
+</RelativeLayout>

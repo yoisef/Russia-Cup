@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="0dp"
+       android:layout_weight="1"
+      >
+   <LinearLayout
+       android:layout_width="0dp"
+       android:layout_weight="1"
+       android:layout_margin="5dp"
+       android:orientation="vertical"
+       android:layout_height="match_parent">
+      <TextView
+          android:layout_width="match_parent"
+          android:textStyle="bold"
+          android:layout_margin="5dp"
+          android:layout_gravity="center"
+          android:textSize="18sp"
+          android:textColor="@color/white"
+          android:background="@color/blue"
+          android:gravity="center"
+          android:layout_height="wrap_content"
+          android:text="Next Matches"/>
+      <android.support.v7.widget.RecyclerView
+          android:layout_width="match_parent"
+          android:layout_gravity="center"
+          android:layout_height="0dp"
+          android:layout_weight="1"
+          android:id="@+id/matchesrecyclenext"></android.support.v7.widget.RecyclerView>
+
+   </LinearLayout>
+      <View
+          android:layout_width="1dp"
+          android:layout_height="match_parent"
+         android:background="@color/blue"/>
+   <LinearLayout
+       android:layout_width="0dp"
+       android:layout_weight="1"
+       android:layout_margin="5dp"
+       android:orientation="vertical"
+       android:layout_height="match_parent">
+      <TextView
+          android:layout_width="match_parent"
+          android:textStyle="bold"
+          android:layout_margin="5dp"
+          android:layout_gravity="center"
+          android:textSize="18sp"
+          android:textColor="@color/white"
+          android:background="@color/blue"
+          android:gravity="center"
+          android:layout_height="wrap_content"
+          android:text="Previous Matches"/>
+      <android.support.v7.widget.RecyclerView
+          android:layout_width="match_parent"
+          android:layout_gravity="center"
+          android:layout_height="match_parent"
+          android:id="@+id/matchesrecyclepervious"></android.support.v7.widget.RecyclerView>
+   </LinearLayout>
+   </LinearLayout>
+   <com.google.android.gms.ads.AdView
+       xmlns:ads="http://schemas.android.com/apk/res-auto"
+       android:id="@+id/homeadView"
+       android:layout_width="wrap_content"
+       android:layout_gravity="center"
+       android:layout_height="wrap_content"
+       android:visibility="gone"
+       ads:adSize="BANNER"
+       ads:adUnitId="ca-app-pub-9508195472439107/9973308158">
+   </com.google.android.gms.ads.AdView>
+</LinearLayout>
+
+   <!--
+   <TextView
+       android:layout_width="match_parent"
+       android:text="Last News"
+       android:textSize="18sp"
+       android:background="@color/blue"
+       android:textColor="@color/white"
+       android:textStyle="bold"
+       android:gravity="center"
+       android:layout_height="wrap_content" />
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="0dp"
+       android:layout_weight="2">
+      <android.support.v4.widget.SwipeRefreshLayout
+          xmlns:android="http://schemas.android.com/apk/res/android"
+          android:id="@+id/swiperefresh"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent">
+         <RelativeLayout
+             android:layout_width="match_parent"
+             android:layout_height="match_parent">
+            <ProgressBar
+                android:layout_width="wrap_content"
+                android:id="@+id/myprogressbar"
+                android:layout_centerInParent="true"
+                android:layout_height="wrap_content" />
+      <android.support.v7.widget.RecyclerView
+          android:layout_width="match_parent"
+          android:id="@+id/newsrecycle"
+          android:layout_height="match_parent"></android.support.v7.widget.RecyclerView>
+         </RelativeLayout>
+      </android.support.v4.widget.SwipeRefreshLayout>
+
+   </RelativeLayout>
+
+   </LinearLayout> -->
+
